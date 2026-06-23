@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard Penjualan E-Commerce</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Dashboard Penjualan E-Commerce</h1>
+
+    <div class="summary">
+        <div class="card">
+            <h3>Total Penjualan</h3>
+            <p id="totalSales">Rp 0</p>
+        </div>
+
+        <div class="card">
+            <h3>Total Transaksi</h3>
+            <p id="totalTransaction">0</p>
+        </div>
+    </div>
+
+    <div class="form-box">
+        <h2>Input Penjualan</h2>
+
+        <input type="text" id="product" placeholder="Nama Produk">
+
+        <input type="number" id="qty" placeholder="Jumlah">
+
+        <input type="number" id="price" placeholder="Harga Satuan">
+
+        <button onclick="addSale()">Tambah Data</button>
+    </div>
+
+    <div class="table-box">
+        <h2>Data Penjualan</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Produk</th>
+                    <th>Qty</th>
+                    <th>Harga</th>
+                    <th>Total</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+
+            <tbody id="salesTable">
+            </tbody>
+
+        </table>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
